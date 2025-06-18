@@ -11,16 +11,16 @@ void main() {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children:  [
-            Text('Text 1', style: TextStyle(fontSize: 20,
+            Text('Hello', style: TextStyle(fontSize: 20,
               color: Colors.lime[700],
               fontWeight: FontWeight.bold,
               fontStyle: FontStyle.italic,)
             ),
-            Text('Text 2', style: TextStyle(fontSize: 30,
+            Text('Welcomeee to my...', style: TextStyle(fontSize: 30,
               color: Colors.lime[700],
               fontWeight: FontWeight.bold,),
              ),
-            Text('Text 3', style: TextStyle(fontSize: 40,
+            Text('Sunset Journal', style: TextStyle(fontSize: 40,
               color: Colors.lime[700],
               fontWeight: FontWeight.bold,),
             ),
