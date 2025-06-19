@@ -7,25 +7,80 @@ void main() {
         title: Text('Sunset'),
         backgroundColor: Colors.lime[300],
       ),
-      body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children:  [
-            Text('Hello', style: TextStyle(fontSize: 20,
-              color: Colors.lime[700],
-              fontWeight: FontWeight.bold,
-              fontStyle: FontStyle.italic,)
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.all(10),
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
+          child: Row(
+              children: [
+                Text('Name:',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.lime,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+                Text('Maybel Pesigan',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                    )
+                ),
+              ]
+          ),
+      ),
+
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
+            child: Row(
+                children: [
+                  Text('Age:',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.lime,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      )
+                  ),
+                  Text('21 years old',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      )
+                  ),
+                ]
             ),
-            Text('Welcomeee to my...', style: TextStyle(fontSize: 30,
-              color: Colors.lime[700],
-              fontWeight: FontWeight.bold,),
-             ),
-            Text('Sunset Journal', style: TextStyle(fontSize: 40,
-              color: Colors.lime[700],
-              fontWeight: FontWeight.bold,),
+          ),
+
+          Container(
+            margin: EdgeInsets.fromLTRB(5, 4, 3, 2,),
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
+            child: Row(
+                children: [
+                  Text('Gender:',
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.lime,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      )
+                  ),
+                  Text('Female',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,
+                      )
+                  ),
+                ]
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     ),
   ));
