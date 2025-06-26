@@ -2,87 +2,49 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    title: 'Sunset Journal',
     home: Scaffold(
-      appBar: AppBar(
-        title: Text('Sunset'),
-        backgroundColor: Colors.lime[300],
-      ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.all(10),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
-          child: Row(
-              children: [
-                Text('Name:',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.lime,
-                      fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic,
-                    )
-                ),
-                Text('Maybel Pesigan',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      fontStyle: FontStyle.italic,
-                    )
-                ),
-              ]
-          ),
-      ),
-
-          Container(
-            margin: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
-            child: Row(
-                children: [
-                  Text('Age:',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.lime,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                      )
-                  ),
-                  Text('21 years old',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                      )
-                  ),
-                ]
+      backgroundColor: Colors.pink[40],
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(height: 24),
+            const Text(
+              '“Together, we watched the sky catch fire. '
+                  'The sun dipped low, and in that quiet moment, everything felt infinite.”',
+              style: TextStyle(
+                fontSize: 20,
+                fontStyle: FontStyle.italic,
+                color: Colors.black87,
+              ),
+              textAlign: TextAlign.center,
             ),
-          ),
-
-          Container(
-            margin: EdgeInsets.fromLTRB(5, 4, 3, 2,),
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10 ),
-            child: Row(
-                children: [
-                  Text('Gender:',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.lime,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                      )
+            const SizedBox(height: 30),
+            SizedBox(
+              width: 160,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink.shade300,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
                   ),
-                  Text('Female',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        fontStyle: FontStyle.italic,
-                      )
+                ),
+                child: const Text(
+                  "Beautiful Ending",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
-                ]
-            ),
-          ),
-        ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     ),
   ));
 }
-
