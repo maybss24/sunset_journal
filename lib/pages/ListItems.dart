@@ -11,11 +11,11 @@ class Listitems extends StatefulWidget {
 
 class _ListitemsState extends State<Listitems> {
   List<Color> colors = [
-    Color(name: 'pinkSunset', description: 'soft pink tones', caption: 'Dusk Dreams'),
-    Color(name: 'yellowSunset', description: 'yellowish', caption: 'Fiery Skies'),
-    Color(name: 'orangeSunset', description: 'yellow orange', caption: 'Golden Glow'),
-    Color(name: 'orangeGlow', description: 'vibrant orange hue', caption: 'Sunset Magic'),
-    Color(name: 'redTwilight', description: 'deep red sunset', caption: 'Crimson Horizon'),
+    Color(name: 'Pink Sunset', description: 'soft pink tones', caption: 'Dusk Dreams'),
+    Color(name: 'Yellow Sunset', description: 'yellowish', caption: 'Fiery Skies'),
+    Color(name: 'Orange Sunset', description: 'yellow orange', caption: 'Golden Glow'),
+    Color(name: 'Orange Glow', description: 'vibrant orange hue', caption: 'Sunset Magic'),
+    Color(name: 'Red Twilight', description: 'deep red sunset', caption: 'Crimson Horizon'),
   ];
 
   @override
@@ -52,6 +52,13 @@ class _ListitemsState extends State<Listitems> {
             }).toList(),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            Navigator.pushNamed(context, '/add');
+          },
+          backgroundColor: Colors.pink.shade200,
+          child: Icon(Icons.add),
       ),
     );
   }
